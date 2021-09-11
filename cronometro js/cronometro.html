@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cronometro</title>
+</head>
+<style>
+    *{ margin: 0 auto;
+        padding: 0;
+
+    }
+    .max-widht {
+        max-width: 500px;
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+        
+
+    }
+    .bg-green {
+        background-color: aqua;
+        width: 100px;
+        height: 50px;
+        font-size: medium;
+    }
+    .bg-yellow {
+        background-color: chartreuse;
+        width: 100px;
+        height: 50px;
+        font-size: medium;
+    }
+    .bg-red {
+        background-color: red;
+        width: 100px;
+        height: 50px;
+        font-size: medium;
+    }
+    body {
+        text-align: center;
+        padding: 250px;
+        background-color: rgb(158, 145, 145);
+    }
+</style>
+<body>
+    <div class="max-width">
+        <button onclick="start ();" class="bg-green"> iniciar</button>
+        <button  onclick= " pause();"class="bg-yellow"> pausar</button> 
+        <button onclick="stop();" class="bg-red">parar</button>
+        <h1 id="counter">00:00:00</h1>
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
